@@ -8,6 +8,10 @@ def Combination(listNumbers):
 
 
 n = int(input("Введите длину списка n: "))
-listNumbers = list(map(int, input("Введите элементы списка[",n,"]").split()))
+listNumbers = list(map(int, input("Введите элементы списка: ").split()))
 
-print("Результат:", Combination(listNumbers))
+if len(listNumbers) != n:
+    print("Ошибка: количество введенных элементов не соответствует заданной длине списка.")
+else:
+    print("Результат:", Combination(listNumbers))
+
