@@ -1,5 +1,5 @@
 #def Combination()
 
 n = 0
-input("Введите n: ", n)
+n = input("Введите n: ")
 print(n)
